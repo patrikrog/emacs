@@ -1,11 +1,19 @@
-(defun open-org-dir ()
+(defun pr/open-emacs-dir ()
+  (interactive)
+  (find-file "~/.config/emacs"))
+
+(defun pr/open-scratch-buffer ()
+  (interactive)
+  (switch-to-buffer "*scratch*"))
+
+(defun pr/open-org-dir ()
   (interactive)
   (find-file "~/.org"))
 
-(defun load-file-emacs-dir (filename)
+(defun pr/load-file-emacs-dir (filename)
   (expand-file-name filename user-emacs-directory))
 
-(defun reload-init ()
+(defun pr/reload-init ()
   (interactive)
   (load-file
    (expand-file-name "init.el" user-emacs-directory)))
