@@ -46,6 +46,19 @@
 	  org-replace-disputed-keys t
 	  org-support-shift-select t)
 
+(setq magit-display-buffer-function
+	  (lambda (buffer)
+        (display-buffer
+         buffer (if (and (derived-mode-p 'magit-mode)
+                         (memq (with-current-buffer buffer major-mode)
+                               '(magit-process-mode
+                                 magit-revision-mode
+                                 magit-diff-mode
+                                 magit-stash-mode
+                                 magit-status-mode)))
+                    nil
+                  '(display-buffer-same-window)))))
+
 
 (setq-default inhibit-startup-screen t
 			  tab-width 4
@@ -69,3 +82,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'dired-find-alternate-file 'disabled nil)

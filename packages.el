@@ -18,5 +18,8 @@
 (straight-use-package 'dashboard)
 (straight-use-package 'electric)
 (straight-use-package 'vertico)
+(straight-use-package 'consult)
 (straight-use-package 'autothemer)
 (straight-use-package 'magit)
+(straight-use-package 'orderless)
+
