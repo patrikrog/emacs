@@ -22,4 +22,4 @@
 (straight-use-package 'autothemer)
 (straight-use-package 'magit)
 (straight-use-package 'orderless)
-
+(straight-use-package 'bind-key)
