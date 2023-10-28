@@ -2,7 +2,7 @@
 (add-to-list 'default-frame-alist '(width . 100)) ;; Horizontal frame size
 (add-to-list 'default-frame-alist '(left . 450))
 (add-to-list 'default-frame-alist '(top . 200))
-(add-to-list 'default-frame-alist '(font . "Hack-10"))
+(add-to-list 'default-frame-alist '(font . "Hack-9"))
 (add-to-list 'custom-theme-load-path "~/.config/emacs/themes")
 
 
