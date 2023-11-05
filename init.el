@@ -73,13 +73,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(kanagawa))
  '(custom-safe-themes
-   '("0bbfb2d1f64662bdfa107125ddb157e1709e164ee9d4b88ad39b533ef96dcc97" "9f76d044d2eac30c5c351e34c913dfeee3ab71ef97fd51f90ceeb16134c69b1f" "831aeccb5350f71e04e24e077f810ec8a0cdb49c66faf8f10eb3dfde60f3facb" default)))
+   '("75fb82e748f32de807b3f9e8c72de801fdaeeb73c791f405d8f73711d0710856" "65a1a112abd99456167df57ce2cfff42ed137c4f9146e75b2ae9812499689c3a" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "833ddce3314a4e28411edf3c6efde468f6f2616fc31e17a62587d6a9255f4633" "fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" "524fa911b70d6b94d71585c9f0c5966fe85fb3a9ddd635362bfabd1a7981a307" "0bbfb2d1f64662bdfa107125ddb157e1709e164ee9d4b88ad39b533ef96dcc97" "9f76d044d2eac30c5c351e34c913dfeee3ab71ef97fd51f90ceeb16134c69b1f" "831aeccb5350f71e04e24e077f810ec8a0cdb49c66faf8f10eb3dfde60f3facb" default)))
+(put 'dired-find-alternate-file 'disabled nil)
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(put 'dired-find-alternate-file 'disabled nil)

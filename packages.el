@@ -23,3 +23,6 @@
 (straight-use-package 'magit)
 (straight-use-package 'orderless)
 (straight-use-package 'bind-key)
+(straight-use-package 'ef-themes)
+(straight-use-package 'lua-mode)
+(straight-use-package 'catppuccin-theme)
