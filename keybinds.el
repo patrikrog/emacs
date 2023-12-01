@@ -1,10 +1,17 @@
 ;;(bind-keys :map dired-mode-map
 ;;	   ("<mouse-2>" . dired-find-alternate-file))
 (bind-keys :prefix-map ctrl-o-prefix-map
-	   :prefix "C-o"
-	   ("o" . find-file)
-	   ("n" . pr/open-org-dir)
-	   ("c" . pr/open-emacs-dir))
+		   :prefix "C-o"
+		   ("o" . find-file)
+		   ("n" . pr/open-org-dir)
+		   ("c" . pr/open-emacs-dir))
+
+(bind-keys :prefix-map ctrl-p-prefix-map
+		   :prefix "C-p"
+		   ("f" . projectile-find-file)
+		   ("s" . projectile-ripgrep)
+		   ("r" . projectile-recentf)
+		   ("c" . projectile-compile-project))
 
 (bind-keys*
  ([f1] . find-file)
@@ -17,12 +24,11 @@
  ([f8] . delete-window)
  ([f9] . pr/open-scratch-buffer)
  ([f10] . indent-region)
+ ([f11] . treemacs)
  ("C-<prior>" . beginning-of-buffer)
  ("C-<next>" . end-of-buffer)
  ("<next>" . scroll-up-command)
  ("<prior>" . scroll-down-command)
- ("M-<left>" . previous-buffer)
- ("M-<right>" . next-buffer)
  ("M-n" . centaur-tabs-backward)
  ("M-o" . centaur-tabs-forward)
  ("C-z" . undo)
@@ -32,4 +38,8 @@
  ("C-c s v" . split-window-below)
  ("C-c s c" . delete-window)
  ("C-c e r" . pr/reload-init)
- ("C-x b" . consult-buffer))
+ ("C-x b" . consult-buffer)
+ ("M-<left>" . windmove-left)
+ ("M-<right>" . windmove-right)
+ ("M-<up>" . windmove-up)
+ ("M-<down>" . windmove-down))

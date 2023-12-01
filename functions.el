@@ -1,6 +1,6 @@
 (defun pr/open-emacs-dir ()
   (interactive)
-  (find-file "~/.config/emacs"))
+  (find-file pr/emacs-dir))
 
 (defun pr/open-scratch-buffer ()
   (interactive)
@@ -8,7 +8,7 @@
 
 (defun pr/open-org-dir ()
   (interactive)
-  (find-file "~/.org"))
+  (find-file pr/org-dir))
 
 (defun pr/load-file-emacs-dir (filename)
   (expand-file-name filename user-emacs-directory))

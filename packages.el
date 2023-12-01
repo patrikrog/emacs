@@ -13,6 +13,9 @@
 
 ;; (straight-use-package
 ;;  '(hydrangea-theme :type git :host github :repo "yuttie/hydrangea-emacs"))
+;; (straight-use-package 'catppuccin-theme)
+;; (straight-use-package 'ef-themes)
+
 (straight-use-package 'org)
 (straight-use-package 'centaur-tabs)
 (straight-use-package 'dashboard)
@@ -23,6 +26,10 @@
 (straight-use-package 'magit)
 (straight-use-package 'orderless)
 (straight-use-package 'bind-key)
-(straight-use-package 'ef-themes)
 (straight-use-package 'lua-mode)
-(straight-use-package 'catppuccin-theme)
+(straight-use-package 'rg)
+(straight-use-package 'lsp-mode)
+(straight-use-package 'company-mode)
+(straight-use-package 'projectile)
+(straight-use-package 'treemacs)
+(straight-use-package 'jinja2-mode)
