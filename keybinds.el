@@ -8,10 +8,12 @@
 
 (bind-keys :prefix-map ctrl-p-prefix-map
 		   :prefix "C-p"
-		   ("f" . projectile-find-file)
+		   ("f" . consult-projectile-find-file)
 		   ("s" . projectile-ripgrep)
-		   ("r" . projectile-recentf)
-		   ("c" . projectile-compile-project))
+		   ("r" . consult-projectile-recentf)
+		   ("c" . projectile-compile-project)
+		   ("b" . consult-project-buffer)
+		   ("e" . projectile-run-eshell))
 
 (bind-keys*
  ([f1] . find-file)
@@ -33,12 +35,15 @@
  ("M-o" . centaur-tabs-forward)
  ("C-z" . undo)
  ("C-s" . consult-line)
+ ("M-w" . comment-dwim)
+ ("C-b" . consult-buffer)
  ("C-c g" . magit)
  ("C-c s h" . split-window-right)
  ("C-c s v" . split-window-below)
  ("C-c s c" . delete-window)
  ("C-c e r" . pr/reload-init)
- ("C-x b" . consult-buffer)
+ ("C-c e t" . consult-theme)
+ ("C-c e q" . save-buffers-kill-terminal)
  ("M-<left>" . windmove-left)
  ("M-<right>" . windmove-right)
  ("M-<up>" . windmove-up)
